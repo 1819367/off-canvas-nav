@@ -52,7 +52,7 @@ h1 {
 
 :focus {
   outline: 3px solid var(--clr-hover);
-  outline-offset: 3px;
+  outline-offset: 1px;
 }
 
 /* containers */
@@ -64,12 +64,14 @@ h1 {
   background: var(--clr-dark);
   left: -14rem;
   width: 14 rem;
+  transition: transform 0.3s ease-out;
 }
 
 .main__container {
   padding-top: 3rem;
   padding-left: 2.5rem;
   max-width: 42rem;
+  transition: transform 0.3s ease-out;
 }
 
 .nav-is-open .nav__container,
@@ -87,7 +89,8 @@ h1 {
   margin-left: 1rem;
   letter-spacing: 2px;
   cursor: pointer;
-  transition: transform 200ms ease-in-out;
+  border: 2px solid currentColor;
+  transition: background-color 0.3s ease-out;
 }
 
 button:hover {
